@@ -14,7 +14,7 @@ VOLUME [ "/data", "/movies" ]
 # Install mono
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF && \
     echo "deb https://download.mono-project.com/repo/ubuntu stable-focal main" | tee /etc/apt/sources.list.d/mono-official-stable.list && \
-    apt -y update && apt install -y mono-devel && \
+    apt -y update && apt install -y mono-devel mediainfo curl && \
     apt -y autoremove && apt -y clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Add in scripts for health check and start-up
