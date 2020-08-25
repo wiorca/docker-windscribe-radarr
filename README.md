@@ -36,7 +36,7 @@ docker create \
   -v /location/elsewhere:/data \
   -v /location/elsewhere:/movies \
   --dns 8.8.8.8 \
-  -p 8989:8989 \
+  -p 7878:7878 \
   --cap-add NET_ADMIN \
   --restart unless-stopped \
   wiorca/docker-windscribe-radarr
@@ -107,7 +107,7 @@ The following parameters are inhereted from the parent container:
 | :----: | --- | --- |
 | /config | /opt/docker/docker-windscribe-radarr-config | The home directory of docker_user, and where configuration files will live (inhereted from parent)|
 | /data | /opt/docker/docker-windscribe-qbittorrent-data | The location where torrent data should be stored (should be consistant with qbittorrent) |
-| /movies | /opt/docker/docker-windscribe-radarr-data | The location where the tv data should be stored (could be anywhere, this is an example)|
+| /movies | /opt/docker/docker-windscribe-radarr-data | The location where the movie data should be stored (could be anywhere, this is an example)|
 
 ## Below are the instructions for updating containers:
 
