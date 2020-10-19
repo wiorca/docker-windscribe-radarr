@@ -74,7 +74,7 @@ services:
       - 7878:7878
     dns:
       - 8.8.8.8
-    cap-add:
+    cap_add:
       - NET_ADMIN
     restart: unless-stopped
 ```
