@@ -3,7 +3,7 @@
 FROM wiorca/docker-windscribe:latest
 
 # Version
-ARG VERSION=0.0.4
+ARG VERSION=0.0.5
 
 # Expose the webadmin port for Radarr
 EXPOSE 7878/tcp
