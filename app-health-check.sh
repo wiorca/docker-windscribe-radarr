@@ -12,4 +12,3 @@ fi
 echo "Radarr is running"
 
 exit 0
-
